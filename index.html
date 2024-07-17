@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <h1>TO-DO List</h1>
+    <div class="form-container">
+        <form id="taskForm">
+            <div class="form-group">
+                <label for="taskName">Nombre de la tarea</label>
+                <input type="text" id="taskName" name="taskName" required>
+            </div>
+            <div class="form-group">
+                <label for="priority">Prioridad</label>
+                <select id="priority" name="priority" required>
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Cargar Tarea</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- La lista donde se mostraran las tareas -->
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <ul id="taskList">
+
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
